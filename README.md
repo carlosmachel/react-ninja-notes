@@ -85,3 +85,14 @@ function calculateDateDifference(date1, date2) {
     return date1 - date2;
 }
 ```
+
+```js
+const Title = props => <h1>Olá `${props.name} ${props.lastName}`</h1>
+```
+
+or
+
+
+```js
+const Title = {name, lastName} => <h1>Olá `${name} ${lastName}`</h1>
+```
