@@ -98,3 +98,5 @@ or
 ```js
 const Title = {name, lastName} => <h1>Olá `${name} ${lastName}`</h1>
 ```
+
+Componentes são feitos com função pura principalmente, quando vocẽ tiver necessidade você coloca classe.
