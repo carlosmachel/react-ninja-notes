@@ -165,3 +165,9 @@ onClick={() => this.setState({ text: 'outro texto' })}
 make that little hack classe `var self = this` or `var that = this` and pass around in your functions. With ES2015 you don't need that anymore.
 
 Another way you can use `.bind(this)` but this is slow. 
+
+- What is stateful and statelees?
+
+stateless don't manipulate state. Don't have `this`. 
+
+stateful require to manipulate state.
