@@ -117,5 +117,26 @@ return (
 )
 ```
 
-- What is Composition
+- What is Composition?
 
+Create a simple and generic component and increment from that to create complex components. See 'like-button' and 'search-button'
+
+```js
+const sum = (x, y) => x + y
+
+sum(1,2)
+
+sum(1,2)
+
+sum(sum(1,2), 3) /* composition */
+```
+
+- What is State?
+
+in React class components we have access of `this`. 
+
+So you have `this.state`. That has the an object that has all the info about the state of your component.
+
+To have a **statefull** component you must have a `class` extending from `Component` or use `React.createClass`
+
+Pure Function Components are `stateless`, so it won't work.
