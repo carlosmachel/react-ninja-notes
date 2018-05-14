@@ -1,11 +1,11 @@
 'use strict'
 
 import React, { Component } from 'react'
-import Button from './button'
+import LikeButton from './like-button'
 
 class App extends Component {
   render () {
-    return <Button>Texto</Button>
+    return <LikeButton />
   }
 }
 
