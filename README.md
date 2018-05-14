@@ -140,3 +140,28 @@ So you have `this.state`. That has the an object that has all the info about the
 To have a **statefull** component you must have a `class` extending from `Component` or use `React.createClass`
 
 Pure Function Components are `stateless`, so it won't work.
+
+- What is arrow functions?
+
+
+The difference in this two piece of code is, one works and the other don't. 
+
+But why? 
+
+using `function() {}` in javascript the `this` is the function itself. And using `() => {}` arrow functions the `this` is the element that contain the arrow function. 
+
+```js
+onClick={function() {
+    this.setState({ text: 'outro texto' })
+}}
+```
+
+```js
+onClick={() => this.setState({ text: 'outro texto' })}
+```
+
+- How can we make work with function? 
+
+make that little hack classe `var self = this` or `var that = this` and pass around in your functions. With ES2015 you don't need that anymore.
+
+Another way you can use `.bind(this)` but this is slow. 
