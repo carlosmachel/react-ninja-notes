@@ -100,3 +100,22 @@ const Title = {name, lastName} => <h1>Olá `${name} ${lastName}`</h1>
 ```
 
 Componentes são feitos com função pura principalmente, quando vocẽ tiver necessidade você coloca classe.
+
+- What is **children** property?
+
+Is a special property from React, this property will render everything that it's inside the component when I rendered him.
+
+
+```js
+/* Component */
+const Div = ({children}) => <div>{children}</div>
+
+/* Use*/
+/* code omited...*/
+return (
+    <Div>What I want to put inside the div</Div>
+)
+```
+
+- What is Composition
+
