@@ -198,3 +198,6 @@ stateful require to manipulate state.
 - What methods are in lifecycle update?
 
 - componentWillReceiveProps : this method is only called when you pass properties to the element.
+
+- shouldComponentUpdate: Returns true or false. If false don't render the element. Custom check if component should update or not. If you don't have any custom check don't use it.
+
