@@ -186,6 +186,8 @@ stateful require to manipulate state.
 
 - What is mounting / unmounting?
 
+Runned once. when mount and unmount. 
+
     - ComponentWillMount: 
     run in server and in client side. So don't manipulate anything that don't exists in both worlds.
 
@@ -197,7 +199,12 @@ stateful require to manipulate state.
 
 - What methods are in lifecycle update?
 
+execute when the component is rendered.
+
 - componentWillReceiveProps : this method is only called when you pass properties to the element.
 
 - shouldComponentUpdate: Returns true or false. If false don't render the element. Custom check if component should update or not. If you don't have any custom check don't use it.
 
+- componentWillUpdate: Before the component render again. Don't use `setState` in here.
+
+- componentDidUpdate: Executed after the component rendered.
