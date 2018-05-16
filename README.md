@@ -171,3 +171,26 @@ Another way you can use `.bind(this)` but this is slow.
 stateless don't manipulate state. Don't have `this`. 
 
 stateful require to manipulate state.
+
+- What is lifecycle?
+
+    - mounting / unmounting
+        - componentWillMount
+        - componentDidMount
+        - componentWillUnmount
+    - update
+        - componentWillReceiveProps(nextProps)            
+        - shouldComponentUpdate(nextProps, nextState) => bool
+        - componentWillUpdate(nextProps, nextState)
+        - componentDidUpdate(prevProps, prevState)
+
+- What is mounting / unmounting?
+
+    - ComponentWillMount: 
+    run in server and in client side. So don't manipulate anything that don't exists in both worlds.
+
+    - ComponentDidMount: After rendered. Manipulate DOM with external library. Execute only once.
+
+    - componentWillUnmount: 
+
+- Never manipulate DOM in React, only data.
