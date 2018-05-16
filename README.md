@@ -194,3 +194,7 @@ stateful require to manipulate state.
     - componentWillUnmount: 
 
 - Never manipulate DOM in React, only data.
+
+- What methods are in lifecycle update?
+
+- componentWillReceiveProps : this method is only called when you pass properties to the element.
